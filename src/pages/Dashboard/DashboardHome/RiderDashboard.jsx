@@ -1,9 +1,10 @@
 import React from 'react';
+import Dashboard from './Dashboard';
 
 const RiderDashboard = () => {
     return (
-        <div>
-            <h2 className="text-5xl">Rider Dashing</h2>
+        <div className='py-6'>
+            <Dashboard></Dashboard>
         </div>
     );
 };
