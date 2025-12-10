@@ -41,8 +41,9 @@ const Dashboard = () => {
 
     if (loading)
         return (
-            <p className="text-center text-xl text-blue-600 mt-10">
-                Loading Dashboard...
+            <p className="text-center ">
+                {/* Loading Dashboard... */}
+                <loading></loading>
             </p>
         );
 
