@@ -1,6 +1,7 @@
 import React from 'react';
-import { NavLink, Outlet } from 'react-router';
-import ProFastLogo from '../pages/shared/ProFastLogo/ProFastLogo';
+import { Link, NavLink, Outlet } from 'react-router';
+// import ProFastLogo from '../pages/shared/ProFastLogo/ProFastLogo';
+import logo from '../assets/logoD.png'
 import { FaHome, FaBoxOpen, FaMoneyCheckAlt, FaUserEdit, FaSearchLocation, FaUserCheck, FaUserClock, FaUserShield, FaMotorcycle, FaTasks, FaCheckCircle, FaWallet } from 'react-icons/fa';
 import useUserRole from '../hooks/useUserRole';
 import ChatBoth from '../components/AIchatBoth/ChatBoth';
@@ -45,7 +46,15 @@ const DashboardLayout = () => {
                 <label htmlFor="my-drawer-2" aria-label="close sidebar" className="drawer-overlay"></label>
                 <ul className="menu bg-[#213448] text-white min-h-full ">
                     {/* Sidebar content here */}
-                    <ProFastLogo></ProFastLogo>
+                    {/* <ProFastLogo></ProFastLogo> */}
+                    <Link to="/">
+                        <div className='flex items-start  border-b-4 border-[#F04C2B] mb-4 '>
+                            <img className='mb-2 w-[200px]' src={logo} alt="" />
+                            {/* <p className='text-3xl -ml-2 font-extrabold'>ProFast</p> */}
+                        </div>
+                    </Link>
+
+
                     <li>
                         <NavLink to="/dashboard">
                             <FaHome className="inline-block mr-2" />
