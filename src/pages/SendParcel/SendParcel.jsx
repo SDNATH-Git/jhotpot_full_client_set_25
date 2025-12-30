@@ -391,7 +391,7 @@ const SendParcel = () => {
     };
 
     return (
-        <div className="min-h-screen  py-10 px-5 md:px-20">
+        <div className="min-h-screen  py-10 px-5 md:px-20 bg-[#F7F7F7]">
             <div className="max-w-6xl mx-auto bg-white/80 backdrop-blur-md p-8 rounded-3xl shadow-2xl border border-blue-200">
                 <div className="text-center mb-8">
                     <h2 className="text-3xl font-extrabold text-[#0D5EA6]">
