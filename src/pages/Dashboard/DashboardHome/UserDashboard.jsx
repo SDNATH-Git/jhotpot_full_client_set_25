@@ -3,7 +3,7 @@ import Dashboard from './Dashboard';
 
 const UserDashboard = () => {
     return (
-        <div className='p-6'>
+        <div className=''>
             <Dashboard></Dashboard>
         </div>
     );

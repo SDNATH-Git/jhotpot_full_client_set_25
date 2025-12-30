@@ -3,7 +3,7 @@ import Dashboard from './Dashboard';
 
 const RiderDashboard = () => {
     return (
-        <div className='py-6'>
+        <div className=''>
             <Dashboard></Dashboard>
         </div>
     );

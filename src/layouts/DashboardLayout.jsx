@@ -17,7 +17,7 @@ const DashboardLayout = () => {
             <div className="drawer-content flex flex-col ">
 
                 {/* Navbar */}
-                <div className="navbar bg-[#213448] w-full lg:hidden shadow-orange-500 ">
+                <div className="navbar bg-[#03373D] w-full lg:hidden shadow-orange-500 ">
                     <div className="flex-none text-white ">
                         <label htmlFor="my-drawer-2" aria-label="open sidebar" className="btn btn-square btn-ghost">
                             <svg
@@ -45,7 +45,7 @@ const DashboardLayout = () => {
             </div>
             <div className="drawer-side ">
                 <label htmlFor="my-drawer-2" aria-label="close sidebar" className="drawer-overlay"></label>
-                <ul className="menu bg-[#213448] text-white min-h-full ">
+                <ul className="menu bg-[#03373D] text-white min-h-full ">
                     {/* Sidebar content here */}
                     {/* <ProFastLogo></ProFastLogo> */}
                     <Link to="/">
@@ -165,3 +165,5 @@ const DashboardLayout = () => {
 };
 
 export default DashboardLayout;
+
+
