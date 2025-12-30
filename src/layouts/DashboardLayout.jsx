@@ -61,6 +61,12 @@ const DashboardLayout = () => {
                             Home
                         </NavLink>
                     </li>
+                    {/* <li>
+                        <NavLink to="/dashboard/adminDashboard">
+                            <FaHome className="inline-block mr-2" />
+                            Dashboard
+                        </NavLink>
+                    </li> */}
                     <li>
                         <NavLink to="/dashboard/myParcels">
                             <FaBoxOpen className="inline-block mr-2" />
@@ -111,6 +117,13 @@ const DashboardLayout = () => {
                     {/* admin link */}
                     {!roleLoading && role === 'admin' &&
                         <>
+                            <li>
+                                <NavLink to="/dashboard/adminDashboard">
+                                    <FaHome className="inline-block mr-2" />
+                                    Dashboard
+                                </NavLink>
+                            </li>
+
                             <li>
                                 <NavLink to="/dashboard/assign-rider">
                                     <FaMotorcycle className="inline-block mr-2" />

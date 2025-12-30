@@ -48,8 +48,8 @@ const Dashboard = () => {
         );
 
     return (
-        <div className=" mb-4 lg:py-10 py-5">
-            <div className="max-w-5xl mx-auto bg-[#03373D]  rounded-xl p-4 sm:p-6 md:p-8 border border-red-100 shadow-md">
+        <div className=" mb-4 lg:py-10 py-5 px-5">
+            <div className="max-w-5xl mx-auto bg-[#03373D]  rounded-xl p-4 sm:p-6 md:p-8 border border-red-100 shadow-sm">
 
                 {/* Top Section */}
                 <div className="flex flex-col md:flex-row items-center justify-between gap-6">

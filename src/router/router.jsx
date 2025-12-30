@@ -25,6 +25,7 @@ import CompletedDeliveries from "../pages/Dashboard/CompletedDeliveries/Complete
 import MyEarnings from "../pages/Dashboard/MyEarnings/MyEarnings";
 import DashboardHome from "../pages/Dashboard/DashboardHome/DashboardHome";
 import Profile from "../pages/Dashboard/Profile/Profile";
+import AdminDashboard from "../pages/Dashboard/DashboardHome/AdminDashboard";
 
 export const router = createBrowserRouter([
   {
@@ -118,6 +119,10 @@ export const router = createBrowserRouter([
         </RiderRoute>
       },
       // admin only routes
+      {
+        path: 'adminDashboard',
+        element: <AdminRoute><AdminDashboard></AdminDashboard> </AdminRoute>
+      },
       {
         path: 'assign-rider',
         element: <AdminRoute><AssignRider></AssignRider></AdminRoute>
