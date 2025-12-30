@@ -133,8 +133,8 @@ import {
     FaBoxes,
     FaDollarSign,
     FaChartLine,
-    FaUsers, // নতুন: ব্যবহারকারীর জন্য আইকন
-    FaUserTie, // নতুন: রাইডারের জন্য আইকন
+    FaUsers,
+    FaUserTie,
 } from "react-icons/fa";
 import {
     PieChart,
@@ -150,13 +150,13 @@ import {
     Bar,
 } from 'recharts';
 import useAxiosSecure from "../../../hooks/useAxiosSecure";
+import Loading from "../../../components/Loading";
 
-// --- কনফিগারেশন ---
-// ১. স্ট্যাটাস কনফিগারেশন: আধুনিক রঙের প্যালেট এবং শ্যাডো
+
 const STATUS_CONFIG = {
     not_collected: {
         label: "Not Collected",
-        color: '#EF4444', // Red-500
+        color: '#EF4444',
         icon: <FaBoxOpen className="text-4xl text-white" />,
         gradient: "from-red-500 to-red-400",
     },
@@ -233,15 +233,15 @@ const useAdminMetrics = () => {
     // এই হুকটি এখন ডেমো ডেটা ব্যবহার করবে
     const DEMO_METRICS = {
         statusCountData: [
-            { status: 'delivered', count: 185 },
-            { status: 'rider_assigned', count: 42 },
+            { status: 'delivered', count: 30 },
+            { status: 'rider_assigned', count: 15 },
             { status: 'in_transit', count: 10 },
-            { status: 'not_collected', count: 58 },
+            { status: 'not_collected', count: 20 },
         ],
         totalParcels: 295, // 185+42+10+58
-        totalRevenue: 45780.50,
-        totalUsers: 1200,
-        totalRiders: 45,
+        totalRevenue: 15780.50,
+        totalUsers: 100,
+        totalRiders: 25,
     };
 
     // রিয়েল API কলকে বাইপাস
@@ -287,7 +287,7 @@ const useDeliveryTrends = () => {
 // --- চার্ট কম্পোনেন্ট ---
 
 const DeliveryTrends = ({ trendsData, isLoading, isError }) => {
-    if (isLoading) return <div className="text-center py-10 text-gray-500">Loading trends...</div>;
+    if (isLoading) return <div className="text-center py-10 text-gray-500"> <Loading></Loading> </div>;
 
     // ত্রুটি বা ডেটা না থাকলে
     if (isError || !trendsData || trendsData.length === 0) return (
@@ -396,7 +396,7 @@ export default function AdminDashboard() {
 
     return (
         <div className="p-4 md:p-8 lg:p-10 bg-gray-50 min-h-screen">
-            <h1 className="text-4xl md:text-5xl font-extrabold mb-8 text-gray-900 border-b-4 border-indigo-500 pb-3">
+            <h1 className="text-xl md:text-4xl font-extrabold mb-8 text-gray-900 border-b-4 border-indigo-500 pb-3">
                 🚀 Admin Dashboard Overview
             </h1>
 
@@ -413,7 +413,7 @@ export default function AdminDashboard() {
                                 <p className="text-sm font-semibold uppercase text-gray-500 tracking-wider">{metric.title}</p>
                                 <Icon className={`text-4xl ${metric.color}`} />
                             </div>
-                            <p className="text-4xl font-extrabold mt-3 text-gray-800">
+                            <p className="text-2xl font-extrabold mt-3 text-gray-800">
                                 {formatValue(metric.value, metric.format)}
                             </p>
                         </div>
