@@ -261,7 +261,7 @@ const BeARider = () => {
     };
 
     return (
-        <section className="bg-[#F7F7F7] min-h-screen flex items-center py-10">
+        <section className="bg-[#F7F7F7] min-h-screen flex items-center py-10 px-5">
             <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 bg-white rounded-xl shadow-lg overflow-hidden">
 
                 {/* LEFT: FORM */}
