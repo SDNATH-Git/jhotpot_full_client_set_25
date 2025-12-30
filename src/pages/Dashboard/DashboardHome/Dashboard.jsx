@@ -48,8 +48,8 @@ const Dashboard = () => {
         );
 
     return (
-        <div className="bg-gray-50 mb-4">
-            <div className="max-w-5xl mx-auto bg-white rounded-xl p-4 sm:p-6 md:p-8 border border-red-100 shadow-md">
+        <div className=" mb-4 lg:py-10 py-5">
+            <div className="max-w-5xl mx-auto bg-[#03373D]  rounded-xl p-4 sm:p-6 md:p-8 border border-red-100 shadow-md">
 
                 {/* Top Section */}
                 <div className="flex flex-col md:flex-row items-center justify-between gap-6">
@@ -57,9 +57,9 @@ const Dashboard = () => {
                         <h1 className="text-2xl sm:text-3xl font-bold text-[#F04C2B] mb-2">
                             🛡️ {getDashboardTitle(user?.role)}
                         </h1>
-                        <p className="text-gray-700 text-base sm:text-lg">
+                        <p className="text-white text-base sm:text-lg font-bold  ">
                             Welcome,{" "}
-                            <span className="font-semibold text-blue-700">
+                            <span className="font-semibold text-[#F04C2B]">
                                 {user?.name || user?.displayName || "User"}
                             </span>
                             ! 👋

@@ -5,6 +5,7 @@ import UserDashboard from './UserDashboard';
 import RiderDashboard from './RiderDashboard';
 import AdminDashboard from './AdminDashboard';
 import Forbidden from '../../Forbidden/Forbidden';
+import Dashboard from './Dashboard';
 
 const DashboardHome = () => {
     const { role, roleLoading } = useUserRole();
@@ -13,14 +14,15 @@ const DashboardHome = () => {
         return <Loading></Loading>
     }
 
-    if(role === 'user'){
+    if (role === 'user') {
         return <UserDashboard></UserDashboard>
     }
-    else if(role === 'rider'){
+    else if (role === 'rider') {
         return <RiderDashboard></RiderDashboard>
     }
-    else if(role ==='admin'){
-        return <AdminDashboard></AdminDashboard>
+    else if (role === 'admin') {
+        // return <AdminDashboard></AdminDashboard>
+        return <Dashboard></Dashboard>
     }
     else {
         return <Forbidden></Forbidden>
