@@ -395,7 +395,7 @@ const BeARider = () => {
                 {/* RIGHT: IMAGE */}
                 <div className="hidden md:flex items-center justify-center bg-[#F04C2B]/10">
                     <img
-                        src="https://i.ibb.co/7Yj7pP8/delivery-rider.png"
+                        src="https://i.ibb.co.com/jkLWNnjn/rider-1.png"
                         alt="Rider Illustration"
                         className="max-h-[420px] object-contain"
                     />
