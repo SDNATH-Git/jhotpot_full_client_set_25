@@ -5,6 +5,7 @@ import logo from '../assets/logoD.png'
 import { FaHome, FaBoxOpen, FaMoneyCheckAlt, FaUserEdit, FaSearchLocation, FaUserCheck, FaUserClock, FaUserShield, FaMotorcycle, FaTasks, FaCheckCircle, FaWallet } from 'react-icons/fa';
 import useUserRole from '../hooks/useUserRole';
 import ChatBoth from '../components/AIchatBoth/ChatBoth';
+import { BiSolidDashboard } from "react-icons/bi";
 
 const DashboardLayout = () => {
 
@@ -119,7 +120,8 @@ const DashboardLayout = () => {
                         <>
                             <li>
                                 <NavLink to="/dashboard/adminDashboard">
-                                    <FaHome className="inline-block mr-2" />
+                                    {/* <FaHome className="inline-block mr-2" /> */}
+                                    <BiSolidDashboard className="inline-block mr-2" />
                                     Dashboard
                                 </NavLink>
                             </li>
