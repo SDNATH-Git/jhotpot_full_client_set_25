@@ -393,7 +393,7 @@ const BeARider = () => {
                 </div>
 
                 {/* RIGHT: IMAGE */}
-                <div className="hidden md:flex items-center justify-center bg-[#F04C2B]/10">
+                <div className="hidden md:flex items-center justify-center bg-[linear-gradient(270deg,#F9FCFF_0%,#F0F7FF_100%)]">
                     <img
                         src="https://i.ibb.co.com/jkLWNnjn/rider-1.png"
                         alt="Rider Illustration"
