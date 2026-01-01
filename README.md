@@ -1,5 +1,6 @@
-# 🚚 Jhotpot – A Complete B2C Parcel Management & Delivery System
+# 🚚 Jhotpot – Parcel Management & Delivery System
 
+# 📋 Project Overview
 Jhotpot is a **full-stack B2C parcel management and delivery platform** designed to streamline parcel booking, tracking, rider management, and delivery operations through a modern, role-based dashboard system.
 
 The system is built with scalability, performance, and real-world logistics workflows in mind, making it suitable for courier services and delivery-based businesses.
@@ -11,6 +12,26 @@ The system is built with scalability, performance, and real-world logistics work
 * 🌐 **Live Website:** [https://jhotpot.vercel.app](https://jhotpot.vercel.app)
 * 💻 **Client Repository:** [https://github.com/your-username/jhotpot-client](https://github.com/your-username/jhotpot-client)
 * 🖥️ **Server Repository:** [https://github.com/your-username/jhotpot-server](https://github.com/your-username/jhotpot-server)
+
+---
+
+## 🖼️ Screenshots
+
+### 🏠 Home Page
+
+![Home Page](/src/assets/home.png)
+
+### 👤 User Dashboard
+
+![User Dashboard](/src/assets/user.png)
+
+### 🛠️ Rider Dashboard
+
+![Admin Dashboard](/src/assets/rider.png)
+
+### 🏍️ Admin Dashboard
+
+![Rider Dashboard](/src/assets/admin.png)
 
 ---
 
@@ -105,31 +126,7 @@ server/
 4. Delivery status is updated in real time
 5. User can track parcel and view payment history
 
----
 
-## 🖼️ Screenshots
-
-Below are some key screenshots showcasing different parts of the **Jhotpot Parcel Management System**.
-
-### 🏠 Home Page
-
-![Home Page](./screenshots/home.png)
-
-### 👤 User Dashboard
-
-![User Dashboard](./screenshots/user-dashboard.png)
-
-### 🛠️ Admin Dashboard
-
-![Admin Dashboard](./screenshots/admin-dashboard.png)
-
-### 🏍️ Rider Dashboard
-
-![Rider Dashboard](./screenshots/rider-dashboard.png)
-
-### 📦 Parcel Tracking Page
-
-![Parcel Tracking](./screenshots/parcel-tracking.png)
 
 ---
 
