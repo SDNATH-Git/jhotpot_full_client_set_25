@@ -191,8 +191,8 @@ STRIPE_SECRET_KEY=your_stripe_secret_key
 **Shuvo Dev Nath**
 MERN Stack Developer
 
-* GitHub: [https://github.com/your-username](https://github.com/your-username)
-* LinkedIn: [https://linkedin.com/in/your-profile](https://linkedin.com/in/your-profile)
+* GitHub: [https://github.com/SDNATH-Git](https://github.com/SDNATH-Git)
+* LinkedIn: [https://www.linkedin.com/in/sd-nath/](https://www.linkedin.com/in/sd-nath/)
 
 ---
 
