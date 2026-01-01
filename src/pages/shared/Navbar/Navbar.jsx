@@ -52,7 +52,7 @@ const Navbar = () => {
         { name: "Home", path: "/" },
         // { name: "Services", path: "/services" },
         { name: "Coverage", path: "/coverage" },
-        { name: "About_Us", path: "/about_Us" },
+        // { name: "About_Us", path: "/about_Us" },
         { name: "SendParcel", path: "/sendParcel" },
         { name: "Be a Rider", path: "/beARider" },
     ];

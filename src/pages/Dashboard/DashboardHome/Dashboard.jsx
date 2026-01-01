@@ -66,8 +66,9 @@ const Dashboard = () => {
             case "rider":
                 return `${base} bg-[linear-gradient(270deg,#FFF9FC_0%,#FFEFF9_100%)] border-yellow-400`;
             case "active":
-            case "user":
                 return `${base} bg-[linear-gradient(270deg,#F9FCFF_0%,#F0F7FF_100%)] border-blue-400`;
+            case "user":
+                return `${base} bg-[linear-gradient(270deg,#FFF9FC_0%,#FFEFF9_100%)] border-yellow-400`;
             case "deactivated":
             case "rejected":
                 return `${base} bg-red-400 border-gray-400`;
