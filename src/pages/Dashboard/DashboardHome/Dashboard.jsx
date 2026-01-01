@@ -6,7 +6,7 @@ import { AuthContext } from "../../../contexts/AuthContext/AuthProvider";
 import { FaUserShield, FaMotorcycle, FaUser, FaEnvelope, FaExclamationTriangle, FaCheckCircle } from 'react-icons/fa';
 import Loading from "../../../components/Loading";
 
-// --- কাস্টম কালার কনস্ট্যান্টস ---
+
 const PRIMARY_COLOR = '#0D5EA6';
 const ACCENT_COLOR = '#F04C2B';
 const TEXT_SHADE = '#03373D';
@@ -62,17 +62,17 @@ const Dashboard = () => {
         const base = "rounded-xl p-5 text-center shadow-lg transition duration-300 transform hover:scale-[1.02] border-b-4";
         switch (role) {
             case "admin":
-                return `${base} bg-red-100 border-red-400`;
+                return `${base} bg-[linear-gradient(270deg,#FFF9FC_0%,#FFEFF9_100%)] border-red-400`;
             case "rider":
-                return `${base} bg-yellow-100 border-yellow-400`;
+                return `${base} bg-[linear-gradient(270deg,#FFF9FC_0%,#FFEFF9_100%)] border-yellow-400`;
             case "active":
             case "user":
-                return `${base} bg-blue-100 border-blue-400`;
+                return `${base} bg-[linear-gradient(270deg,#F9FCFF_0%,#F0F7FF_100%)] border-blue-400`;
             case "deactivated":
             case "rejected":
-                return `${base} bg-gray-100 border-gray-400`;
+                return `${base} bg-red-400 border-gray-400`;
             default:
-                return `${base} bg-white border-gray-300`;
+                return `${base} bg-[linear-gradient(270deg,#FFF9FC_0%,#FFEFF9_100%)] border-gray-300`;
         }
     };
 
