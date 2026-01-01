@@ -5,7 +5,7 @@ import error from "../assets/error.json";
 
 const Error = () => {
     return (
-        <div className="min-h-screen bg-white text-gray-900 flex flex-col items-center justify-center text-center">
+        <div className="min-h-screen bg-[linear-gradient(270deg,#FFF9FC_0%,#FFEFF9_100%)] text-gray-900 flex flex-col items-center justify-center text-center">
             <div className="max-w-md w-full">
                 <Lottie animationData={error} loop={true} className="w-full mx-auto" />
 
@@ -23,7 +23,7 @@ const Error = () => {
                 </Link>
 
                 <p className="text-sm text-gray-500 mt-4 mb-4">
-                    If this keeps happening, contact our support or try refreshing.
+                    If you believe this is an error with a valid tracking ID, please contact Jhotpot support.
                 </p>
             </div>
         </div>
