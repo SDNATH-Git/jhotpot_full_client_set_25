@@ -1,28 +1,4 @@
-// import React from 'react';
-// import Banner from '../Banner/Banner';
-// import Services from '../Services/Services';
-// import ClientLogosMarquee from '../ClientLogosMarquee/ClientLogosMarquee';
-// import Benefits from '../Benefits/Benefits';
-// import BeMerchant from '../BeMerchant/BeMerchant';
 
-// const Home = () => {
-//     return (
-//         <div>
-//             <Banner />
-//             <Services></Services>
-//             <ClientLogosMarquee></ClientLogosMarquee>
-//             <Benefits></Benefits>
-//             <BeMerchant></BeMerchant>
-//         </div>
-//     );
-// };
-
-// export default Home;
-
-
-
-
-//
 import React from 'react';
 import { motion } from 'framer-motion';
 import Banner from '../Banner/Banner';
@@ -31,6 +7,7 @@ import ClientLogosMarquee from '../ClientLogosMarquee/ClientLogosMarquee';
 import Benefits from '../Benefits/Benefits';
 import BeMerchant from '../BeMerchant/BeMerchant';
 import TestimonialSection from '../TestimonialSection/TestimonialSection';
+
 
 const fadeInUp = {
     hidden: { opacity: 0, y: 60 },
@@ -41,6 +18,7 @@ const Home = () => {
     return (
 
         <div className='px-5 md:px-10 bg-[#F7F7F7]'>
+
 
             {/* Banner Section */}
             <motion.div
@@ -107,3 +85,5 @@ const Home = () => {
 };
 
 export default Home;
+
+
