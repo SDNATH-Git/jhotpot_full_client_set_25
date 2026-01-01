@@ -1,12 +1,208 @@
-# React + Vite
+# 🚚 Jhotpot – A Complete B2C Parcel Management & Delivery System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Jhotpot is a **full-stack B2C parcel management and delivery platform** designed to streamline parcel booking, tracking, rider management, and delivery operations through a modern, role-based dashboard system.
 
-Currently, two official plugins are available:
+The system is built with scalability, performance, and real-world logistics workflows in mind, making it suitable for courier services and delivery-based businesses.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🔗 Live Demo & Repositories
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* 🌐 **Live Website:** [https://jhotpot.vercel.app](https://jhotpot.vercel.app)
+* 💻 **Client Repository:** [https://github.com/your-username/jhotpot-client](https://github.com/your-username/jhotpot-client)
+* 🖥️ **Server Repository:** [https://github.com/your-username/jhotpot-server](https://github.com/your-username/jhotpot-server)
+
+---
+
+## 🎯 Key Features
+
+### 👤 Customer / User
+
+* Parcel booking with delivery details
+* Parcel tracking by tracking ID
+* Secure online payments
+* View parcel history & payment history
+* Profile update & account management
+
+### 🏍️ Rider
+
+* View assigned delivery requests
+* Update delivery status (Pending → Delivered)
+* Earnings tracking dashboard
+
+### 🛠️ Admin
+
+* Assign riders to parcels
+* Manage users and riders
+* Approve or reject rider requests
+* Monitor delivery status & system analytics
+* Role-based access control (RBAC)
+
+---
+
+## 🧑‍💻 Tech Stack
+
+### Frontend
+
+* React.js
+* React Router DOM
+* Tailwind CSS
+* DaisyUI
+* TanStack Query
+* Framer Motion
+* Axios
+
+### Backend
+
+* Node.js
+* Express.js
+* MongoDB
+* JWT Authentication
+
+### Integrations & Tools
+
+* Stripe (Payment Gateway)
+* Cloud Image Hosting
+* Role-based Authorization
+
+---
+
+## 🗂️ Project Structure
+
+```bash
+client/
+ ┣ components/
+ ┣ layouts/
+ ┣ pages/
+ ┣ hooks/
+ ┣ routes/
+ ┗ assets/
+
+server/
+ ┣ controllers/
+ ┣ routes/
+ ┣ middleware/
+ ┣ models/
+ ┗ utils/
+```
+
+---
+
+## 🔐 Authentication & Authorization
+
+* JWT-based authentication
+* Secure private routes for protected pages
+* Role-based access for **Admin**, **Rider**, and **Customer**
+* Unauthorized access is restricted at both frontend and backend levels
+
+---
+
+## 🔄 System Workflow
+
+1. User creates a parcel delivery request
+2. Admin reviews and assigns a rider
+3. Rider accepts and delivers the parcel
+4. Delivery status is updated in real time
+5. User can track parcel and view payment history
+
+---
+
+## 🖼️ Screenshots
+
+Below are some key screenshots showcasing different parts of the **Jhotpot Parcel Management System**.
+
+### 🏠 Home Page
+
+![Home Page](./screenshots/home.png)
+
+### 👤 User Dashboard
+
+![User Dashboard](./screenshots/user-dashboard.png)
+
+### 🛠️ Admin Dashboard
+
+![Admin Dashboard](./screenshots/admin-dashboard.png)
+
+### 🏍️ Rider Dashboard
+
+![Rider Dashboard](./screenshots/rider-dashboard.png)
+
+### 📦 Parcel Tracking Page
+
+![Parcel Tracking](./screenshots/parcel-tracking.png)
+
+---
+
+## ⚙️ Installation & Setup
+
+### Clone the repositories
+
+```bash
+git clone https://github.com/your-username/jhotpot-client.git
+git clone https://github.com/your-username/jhotpot-server.git
+```
+
+### Client Setup
+
+```bash
+cd jhotpot-client
+npm install
+npm run dev
+```
+
+### Server Setup
+
+```bash
+cd jhotpot-server
+npm install
+npm run start
+```
+
+---
+
+## 🔑 Environment Variables
+
+Create a `.env` file in both client and server projects.
+
+### Client (`.env`)
+
+```env
+VITE_API_URL=your_backend_api_url
+```
+
+### Server (`.env`)
+
+```env
+MONGODB_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+STRIPE_SECRET_KEY=your_stripe_secret_key
+```
+
+---
+
+## 🚀 Future Enhancements
+
+* Real-time tracking using Socket.io
+* Push notifications for delivery updates
+* Mobile application (React Native)
+* Advanced delivery analytics & reports
+
+---
+
+## 👨‍💻 Author
+
+**Shuvo Dev Nath**
+MERN Stack Developer
+
+* GitHub: [https://github.com/your-username](https://github.com/your-username)
+* LinkedIn: [https://linkedin.com/in/your-profile](https://linkedin.com/in/your-profile)
+
+---
+
+## 📜 License
+
+This project is developed for educational and portfolio purposes.
+
+---
+
+⭐ *If you find this project useful, feel free to give it a star on GitHub!*
