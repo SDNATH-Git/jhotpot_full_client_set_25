@@ -299,9 +299,9 @@ const DeliveryTrends = ({ trendsData, isLoading, isError }) => {
 
     // Bar Chart রেন্ডারিং
     return (
-        <div className="card bg-white shadow-xl shadow-gray-200 p-6 rounded-xl col-span-full border border-gray-100">
+        <div className="card bg-white shadow-xl shadow-gray-200 p-6 rounded-xl col-span-full border-t-6 border-[#0D5EA6]">
             <h2 className="text-2xl font-bold mb-6 text-gray-800 flex items-center border-b pb-3">
-                <FaChartLine className="mr-3 text-indigo-500" /> Delivery Trends (Last 7 Days)
+                <FaChartLine className="mr-3 text-[#F04C2B]" /> Delivery Trends (Last 7 Days)
             </h2>
             <div className="h-[350px]">
                 <ResponsiveContainer width="100%" height="100%">
@@ -316,7 +316,7 @@ const DeliveryTrends = ({ trendsData, isLoading, isError }) => {
                         <Tooltip contentStyle={{ borderRadius: '8px', border: 'none', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }} />
                         <Legend wrapperStyle={{ paddingTop: '10px' }} />
                         <Bar dataKey="delivered" fill="#10B981" name="Delivered" radius={[4, 4, 0, 0]} />
-                        <Bar dataKey="cancelled" fill="#EF4444" name="Cancelled" radius={[4, 4, 0, 0]} />
+                        <Bar dataKey="cancelled" fill="#F04C2B" name="Cancelled" radius={[4, 4, 0, 0]} />
                     </BarChart>
                 </ResponsiveContainer>
             </div>
@@ -396,18 +396,18 @@ export default function AdminDashboard() {
 
     return (
         <div className="p-4 md:p-8 lg:p-10 bg-gray-50 min-h-screen">
-            <h1 className="text-xl md:text-4xl font-extrabold mb-8 text-gray-900 border-b-4 border-indigo-500 pb-3">
+            <h1 className="text-xl md:text-4xl font-extrabold mb-8 text-gray-900 bg-white rounded-2xl shadow-lg border-b-4 border-[#F04C2B] px-4 py-8 ">
                 🚀 Admin Dashboard Overview
             </h1>
 
             {/* ১. প্রধান মেট্রিক্স কার্ড সেকশন */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 mb-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 mb-10">
                 {mainMetrics.map((metric, index) => {
                     const Icon = metric.icon;
                     return (
                         <div key={index}
                             // আধুনিক কার্ড স্টাইল: bg-white, rounded-xl, shadow-lg, hover effect
-                            className={`card ${metric.bg} bg-white rounded-xl shadow-lg p-6 border-l-4 border-r-2 border-transparent hover:border-indigo-400 transition duration-300 ease-in-out transform hover:scale-[1.02]`}
+                            className={`card ${metric.bg} bg-white rounded-xl shadow-lg p-6 border-l-4 border-r-4 border-transparent hover:border-[#F04C2B] transition duration-300 ease-in-out transform hover:scale-[1.02]`}
                         >
                             <div className="flex items-center justify-between">
                                 <p className="text-sm font-semibold uppercase text-gray-500 tracking-wider">{metric.title}</p>
@@ -422,23 +422,23 @@ export default function AdminDashboard() {
             </div>
 
             {/* ২. ডেলিভারি স্ট্যাটাস এবং চার্ট সেকশন */}
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1  gap-8">
 
                 {/* স্ট্যাটাস কাউন্ট কার্ড (Gradient Style) */}
-                <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     {statusCountData.map(({ count, status }) => {
                         const config = STATUS_CONFIG[status] || UNKNOWN_STATUS;
                         return (
                             <div
                                 key={status}
                                 // Gradient Background এবং White Text
-                                className={`card bg-gradient-to-br ${config.gradient} shadow-2xl p-6 flex flex-col items-center justify-center rounded-xl transition duration-300 hover:shadow-3xl transform hover:translate-y-[-3px]`}
+                                className={`card bg-gradient-to-br ${config.gradient} shadow-lg p-4 flex flex-col items-center justify-center rounded-xl transition duration-300 hover:shadow-3xl transform hover:translate-y-[-3px]`}
                             >
                                 {config.icon}
                                 <h2 className="text-xl font-semibold mt-4 text-white text-center tracking-wide">
                                     {config.label}
                                 </h2>
-                                <p className="text-6xl font-extrabold mt-3 text-white">
+                                <p className="text-5xl font-extrabold mt-3 text-white">
                                     {count.toLocaleString()}
                                 </p>
                             </div>
@@ -447,7 +447,7 @@ export default function AdminDashboard() {
                 </div>
 
                 {/* পাই চার্ট */}
-                <div className="card bg-white shadow-xl shadow-gray-200 p-4 rounded-xl border border-gray-100 flex flex-col justify-center">
+                <div className="card bg-white shadow-xl shadow-gray-200 p-4 rounded-xl border-t-6 border-[#0D5EA6] flex flex-col justify-center">
                     <h2 className="text-xl font-bold text-gray-800 text-center mb-4 border-b pb-2">📦 Status Distribution</h2>
                     <div className="h-[300px] w-full">
                         <ResponsiveContainer width="100%" height="100%">
@@ -488,7 +488,7 @@ export default function AdminDashboard() {
             </div>
 
             {/* ৩. ডেলিভারি ট্রেন্ডস বার চার্ট */}
-            <div className="mt-8">
+            <div className="mt-8 ">
                 <DeliveryTrends trendsData={trendsData} isLoading={isTrendsLoading} isError={isTrendsError} />
             </div>
 
