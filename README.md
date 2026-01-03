@@ -9,9 +9,9 @@ The system is built with scalability, performance, and real-world logistics work
 
 ## 🔗 Live Demo & Repositories
 
-* 🌐 **Live Website:** [https://jhotpot.vercel.app](https://jhotpot.vercel.app)
-* 💻 **Client Repository:** [https://github.com/your-username/jhotpot-client](https://github.com/your-username/jhotpot-client)
-* 🖥️ **Server Repository:** [https://github.com/your-username/jhotpot-server](https://github.com/your-username/jhotpot-server)
+* 🌐 **Live Website:** [https://jhotpot-client-set.web.app](https://jhotpot-client-set.web.app)
+* 💻 **Client Repository:** [https://github.com/SDNATH-Git/jhotpot_full_client_set_25](https://github.com/SDNATH-Git/jhotpot_full_client_set_25)
+* 🖥️ **Server Repository:** [https://github.com/SDNATH-Git/jhotpot_full_server_set_25](https://github.com/SDNATH-Git/jhotpot_full_server_set_25)
 
 ---
 
@@ -189,7 +189,7 @@ STRIPE_SECRET_KEY=your_stripe_secret_key
 ## 👨‍💻 Author
 
 **Shuvo Dev Nath**
-MERN Stack Developer
+(MERN Stack Developer)
 
 * GitHub: [https://github.com/SDNATH-Git](https://github.com/SDNATH-Git)
 * LinkedIn: [https://www.linkedin.com/in/sd-nath/](https://www.linkedin.com/in/sd-nath/)
