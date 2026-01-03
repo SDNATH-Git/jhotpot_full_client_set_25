@@ -315,7 +315,7 @@ const PaymentForm = () => {
             <div className="w-full max-w-2xl mt-10 md:mt-20">
 
                 {/* Header */}
-                <h1 className="text-xl md:text-3xl md:text-4xl font-extrabold text-center mb-10 bg-white p-3 border-b-4 boder-[#F04C2B] rounded-xl " style={{ color: PRIMARY_BRAND_COLOR }}>
+                <h1 className="text-xl md:text-3xl  font-extrabold text-center mb-10 bg-white p-3 border-b-4 boder-[#F04C2B] rounded-xl " style={{ color: PRIMARY_BRAND_COLOR }}>
                     <FaCreditCard className="inline-block mr-3" style={{ color: SECONDARY_BRAND_COLOR }} />
                     Confirm Your Payment
                 </h1>
@@ -324,7 +324,7 @@ const PaymentForm = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
                     {/* 1. Parcel Information Summary Card (Left) */}
-                    <div className="bg-white p-6 rounded-xl shadow-lg h-full border-t-4" style={{ borderColor: PRIMARY_BRAND_COLOR }}>
+                    <div className="bg-white p-6 rounded-xl shadow-lg h-full border-t-4" style={{ borderColor: DARK_TEXT_COLOR }}>
                         <h2 className="text-2xl font-bold mb-4" style={{ color: DARK_TEXT_COLOR }}>
                             <FaTruckMoving className="inline-block mr-2" /> Shipment Details
                         </h2>
