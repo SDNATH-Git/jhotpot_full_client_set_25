@@ -112,7 +112,7 @@ const BeARider = () => {
     };
 
     return (
-        <section className="bg-gray-100 min-h-screen flex items-center justify-center py-10 px-4">
+        <section className="background: linear-gradient(135deg, #F04C2B33, #0D5EA633, #03373D33) min-h-screen flex items-center justify-center py-10 px-4">
             <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 bg-white rounded-3xl shadow-2xl overflow-hidden border-t-8" style={{ borderTopColor: PRIMARY_BRAND_COLOR }}>
 
                 {/* LEFT: FORM */}

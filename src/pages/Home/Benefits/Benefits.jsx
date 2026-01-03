@@ -30,7 +30,7 @@ const benefits = [
 
 const Benefits = () => {
   return (
-    <div className="py-16 bg-base-200">
+    <div className="py-16 ">
       <h2 className="text-3xl font-bold text-[#0D5EA6] text-center mb-12">
         Why Choose Us
       </h2>

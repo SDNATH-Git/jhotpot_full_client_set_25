@@ -76,7 +76,7 @@ const Navbar = () => {
 
     return (
         <header
-            className={`bg-white sticky top-0 z-50 transition-all duration-300 border-b-4 border-transparent shadow-xs ${isSticky ? "border-orange-500 shadow-lg" : ""
+            className={`bg-white sticky top-0 z-50 transition-all duration-300 border-b-2 border-gray-100  shadow-xs ${isSticky ? "border-gray-100 shadow-lg" : ""
                 }`}
         >
             <div className="container py-1 px-5 md:px-10 flex items-center justify-between ">

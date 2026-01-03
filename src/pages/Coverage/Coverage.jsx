@@ -13,7 +13,7 @@ const Coverage = () => {
     const [searchText, setSearchText] = useState(""); // controlled from here
 
     return (
-        <section className="bg-gray-100 py-10 min-h-screen">
+        <section className=" background: linear-gradient(135deg, #F04C2B33, #0D5EA633, #03373D33) py-10 min-h-screen">
             <div className="mx-4 md:mx-8 lg:mx-20 bg-white rounded-3xl shadow-2xl border-t-8" style={{ borderTopColor: PRIMARY_BRAND_COLOR }}>
                 <section className="p-4 md:p-4 flex flex-col items-center">
 

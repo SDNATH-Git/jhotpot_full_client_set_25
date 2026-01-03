@@ -17,7 +17,9 @@ const fadeInUp = {
 const Home = () => {
     return (
 
-        <div className='px-5 md:px-10 bg-[#F7F7F7]'>
+        <div className='px-5 md:px-10  background: linear-gradient(135deg, #F04C2B33, #0D5EA633, #03373D33);
+'>
+            {/* bg-[#F7F7F7] */}
 
 
             {/* Banner Section */}
