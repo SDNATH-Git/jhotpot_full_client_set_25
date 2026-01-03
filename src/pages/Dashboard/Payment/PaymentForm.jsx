@@ -315,7 +315,7 @@ const PaymentForm = () => {
             <div className="w-full max-w-2xl mt-10 md:mt-20">
 
                 {/* Header */}
-                <h1 className="text-3xl md:text-4xl font-extrabold text-center mb-10 bg-white p-4 rounded-lg" style={{ color: PRIMARY_BRAND_COLOR }}>
+                <h1 className="text-xl md:text-3xl md:text-4xl font-extrabold text-center mb-10 bg-white p-3 border-b-4 boder-[#F04C2B] rounded-xl " style={{ color: PRIMARY_BRAND_COLOR }}>
                     <FaCreditCard className="inline-block mr-3" style={{ color: SECONDARY_BRAND_COLOR }} />
                     Confirm Your Payment
                 </h1>
