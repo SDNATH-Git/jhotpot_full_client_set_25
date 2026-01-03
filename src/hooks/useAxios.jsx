@@ -2,7 +2,7 @@ import axios from "axios";
 
 const axiosInstance = axios.create({
     // baseURL: `https://zap-shift-server-psi.vercel.app`
-    baseURL: `http://localhost:3000`
+    baseURL: `https://jhotpot-full-server-set-25.vercel.app`
 })
 
 const useAxios = () => {
@@ -10,3 +10,6 @@ const useAxios = () => {
 };
 
 export default useAxios;
+
+
+

@@ -10,7 +10,7 @@ const useAxiosSecure = () => {
     const auth = getAuth();
 
     const axiosSecure = axios.create({
-        baseURL: 'http://localhost:3000'
+        baseURL: 'https://jhotpot-full-server-set-25.vercel.app'
     });
 
     // Request interceptor
