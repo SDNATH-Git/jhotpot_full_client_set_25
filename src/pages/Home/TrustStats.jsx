@@ -34,44 +34,61 @@ const stats = [
 
 export default function TrustStats() {
     return (
-        <section className="relative overflow-hidden py-16 px-4 md:px-8 ">
-            {/* 🔶 Top Semi-Moon Orange Glow */}
-            <div className="pointer-events-none absolute -top-40 left-1/2 -translate-x-1/2 w-[700px] h-[350px] rounded-b-full bg-[#F04C2B]/30 blur-3xl" />
+        <section className="relative overflow-hidden bg-white px-4 py-16 sm:py-20">
+            {/* 🌙 Top Semi-Moon Orange Glow */}
+            <div
+                className="
+          pointer-events-none absolute
+          -top-32 sm:-top-36 lg:-top-40
+          left-1/2 -translate-x-1/2
+          w-[320px] h-[160px]
+          sm:w-[450px] sm:h-[220px]
+          md:w-[550px] md:h-[260px]
+          lg:w-[700px] lg:h-[350px]
+          rounded-b-full
+          bg-[#F04C2B]/25
+          blur-3xl
+        "
+            />
 
-            {/* 🔶 Left Orange Glow */}
-            {/* <div className="pointer-events-none absolute top-0 left-0 h-full w-40 bg-gradient-to-r from-[#F04C2B]/25 to-transparent blur-2xl" /> */}
+            {/* Side Soft Orange Glow */}
+            <div className="pointer-events-none absolute left-0 top-0 h-full w-32 bg-gradient-to-r from-[#F04C2B]/15 to-transparent blur-2xl" />
+            <div className="pointer-events-none absolute right-0 top-0 h-full w-32 bg-gradient-to-l from-[#F04C2B]/15 to-transparent blur-2xl" />
 
-            {/* 🔶 Right Orange Glow */}
-            {/* <div className="pointer-events-none absolute top-0 right-0 h-full w-40 bg-gradient-to-l from-[#F04C2B]/25 to-transparent blur-2xl" /> */}
-
-
-
-            {/* Content Wrapper */}
-            <div className="relative z-10 max-w-7xl mx-auto">
-                {/* Section Header */}
-                <div className="text-center mb-12">
-                    <h2 className="text-3xl md:text-4xl font-bold text-white">
+            {/* Content */}
+            <div className="relative z-10 mx-auto max-w-7xl">
+                {/* Header */}
+                <div className="mx-auto mb-14 max-w-2xl text-center">
+                    <h2 className="text-3xl font-extrabold text-[#0D5EA6] sm:text-4xl">
                         Trusted by Thousands
                     </h2>
-                    <p className="mt-3 text-gray-200 max-w-xl mx-auto">
+                    <p className="mt-4 text-base text-gray-600 sm:text-lg">
                         Powering fast, secure and reliable parcel delivery across cities
                     </p>
                 </div>
 
                 {/* Stats Grid */}
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div className="grid grid-cols-2 gap-6 sm:gap-8 md:grid-cols-4">
                     {stats.map((stat) => (
                         <motion.div
                             key={stat.id}
-                            whileHover={{ y: -8 }}
-                            transition={{ type: "spring", stiffness: 200 }}
-                            className="relative rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 p-6 text-center shadow-xl"
+                            whileHover={{ y: -10 }}
+                            transition={{ type: "spring", stiffness: 180 }}
+                            className="
+                group relative rounded-2xl
+                bg-white
+                p-6 sm:p-7
+                text-center
+                shadow-[0_10px_30px_rgba(0,0,0,0.08)]
+                hover:shadow-[0_20px_40px_rgba(0,0,0,0.12)]
+                transition
+              "
                         >
                             {/* Icon */}
                             <div
-                                className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full"
+                                className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-xl"
                                 style={{
-                                    backgroundColor: `${stat.color}22`,
+                                    backgroundColor: `${stat.color}20`,
                                     color: stat.color,
                                 }}
                             >
@@ -79,18 +96,18 @@ export default function TrustStats() {
                             </div>
 
                             {/* Value */}
-                            <h3 className="text-2xl md:text-3xl font-extrabold text-white">
+                            <h3 className="text-2xl font-extrabold text-[#03373D] sm:text-3xl">
                                 {stat.value}
                             </h3>
 
                             {/* Title */}
-                            <p className="mt-2 text-sm md:text-base text-gray-200">
+                            <p className="mt-2 text-sm font-medium text-gray-600 sm:text-base">
                                 {stat.title}
                             </p>
 
-                            {/* Bottom Accent */}
+                            {/* Hover Accent Line */}
                             <span
-                                className="absolute bottom-0 left-1/2 h-1 w-16 -translate-x-1/2 rounded-full"
+                                className="absolute inset-x-6 bottom-0 h-1 scale-x-0 rounded-full transition-transform duration-300 group-hover:scale-x-100"
                                 style={{ backgroundColor: stat.color }}
                             />
                         </motion.div>
