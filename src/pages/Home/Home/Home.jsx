@@ -7,6 +7,7 @@ import ClientLogosMarquee from '../ClientLogosMarquee/ClientLogosMarquee';
 import Benefits from '../Benefits/Benefits';
 import BeMerchant from '../BeMerchant/BeMerchant';
 import TestimonialSection from '../TestimonialSection/TestimonialSection';
+import TrustStats from '../TrustStats';
 
 
 const fadeInUp = {
@@ -30,6 +31,15 @@ const Home = () => {
                 variants={fadeInUp}
             >
                 <Banner />
+            </motion.div>
+
+            <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={fadeInUp}
+            >
+                <TrustStats></TrustStats>
             </motion.div>
 
             {/* Services Section */}
