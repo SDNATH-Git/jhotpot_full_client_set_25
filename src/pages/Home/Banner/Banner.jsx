@@ -39,7 +39,7 @@ const Banner = () => {
     const images = [bannerImg1, bannerImg2, bannerImg3, bannerImg4];
 
     return (
-        <div className="py-5">
+        <div className="pt-5">
             <div className="rounded-2xl overflow-hidden  sm:h-[250px] md:h-[350px] lg:h-[500px] bg-white">
                 <Carousel
                     autoPlay
@@ -62,7 +62,7 @@ const Banner = () => {
                 </Carousel>
             </div>
 
-            
+
         </div>
     );
 };

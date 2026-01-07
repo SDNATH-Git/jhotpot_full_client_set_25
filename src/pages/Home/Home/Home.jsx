@@ -18,9 +18,14 @@ const fadeInUp = {
 const Home = () => {
     return (
 
-        <div className='px-5 md:px-10  background: linear-gradient(135deg, #F04C2B33, #0D5EA633, #03373D33);
-'>
-            {/* bg-[#F7F7F7] */}
+        // <div className='px-5 md:px-10  background: linear-gradient(135deg, #F04C2B33, #0D5EA633, #03373D33);'>
+        <div className='px-5 md:px-10  ;'>
+            {/* 🔶 Left Orange Glow */}
+            <div className="pointer-events-none absolute top-0 left-0 h-full w-40 bg-gradient-to-r from-[#F04C2B]/15 to-transparent blur-2xl" />
+
+            {/* 🔶 Right Orange Glow */}
+            <div className="pointer-events-none absolute top-0 right-0 h-full w-40 bg-gradient-to-l from-[#F04C2B]/15 to-transparent blur-2xl" />
+
 
 
             {/* Banner Section */}
@@ -33,6 +38,7 @@ const Home = () => {
                 <Banner />
             </motion.div>
 
+            {/* TrustStats  */}
             <motion.div
                 initial="hidden"
                 whileInView="visible"
