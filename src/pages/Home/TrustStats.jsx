@@ -1,32 +1,38 @@
 import { FaBox, FaMotorcycle, FaCity, FaStar } from "react-icons/fa";
 import { motion } from "framer-motion";
+import CountUp from "react-countup";
 
 const stats = [
     {
         id: 1,
         title: "Parcels Delivered",
-        value: "10,000+",
+        value: 100,
+        suffix: "+",
         icon: <FaBox />,
         color: "#F04C2B",
     },
     {
         id: 2,
         title: "Active Riders",
-        value: "500+",
+        value: 50,
+        suffix: "+",
         icon: <FaMotorcycle />,
         color: "#0D5EA6",
     },
     {
         id: 3,
         title: "Cities Covered",
-        value: "20+",
+        value: 10,
+        suffix: "+",
         icon: <FaCity />,
         color: "#03373D",
     },
     {
         id: 4,
         title: "Customer Rating",
-        value: "4.9★",
+        value: 4.9,
+        suffix: "★",
+        decimals: 1,
         icon: <FaStar />,
         color: "#F04C2B",
     },
@@ -34,7 +40,7 @@ const stats = [
 
 export default function TrustStats() {
     return (
-        <section className="relative overflow-hidden bg-white px-4 py-16 sm:py-20">
+        <section className="relative overflow-hidden   py-16 sm:py-20">
             {/* 🌙 Top Semi-Moon Orange Glow */}
             <div
                 className="
@@ -51,23 +57,19 @@ export default function TrustStats() {
         "
             />
 
-            {/* Side Soft Orange Glow */}
-            <div className="pointer-events-none absolute left-0 top-0 h-full w-32 bg-gradient-to-r from-[#F04C2B]/15 to-transparent blur-2xl" />
-            <div className="pointer-events-none absolute right-0 top-0 h-full w-32 bg-gradient-to-l from-[#F04C2B]/15 to-transparent blur-2xl" />
 
-            {/* Content */}
             <div className="relative z-10 mx-auto max-w-7xl">
                 {/* Header */}
                 <div className="mx-auto mb-14 max-w-2xl text-center">
                     <h2 className="text-3xl font-extrabold text-[#0D5EA6] sm:text-4xl">
                         Trusted by Thousands
                     </h2>
-                    <p className="mt-4 text-base text-gray-600 sm:text-lg">
+                    <p className="mt-4 text-gray-600 sm:text-lg">
                         Powering fast, secure and reliable parcel delivery across cities
                     </p>
                 </div>
 
-                {/* Stats Grid */}
+                {/* Stats */}
                 <div className="grid grid-cols-2 gap-6 sm:gap-8 md:grid-cols-4">
                     {stats.map((stat) => (
                         <motion.div
@@ -75,10 +77,8 @@ export default function TrustStats() {
                             whileHover={{ y: -10 }}
                             transition={{ type: "spring", stiffness: 180 }}
                             className="
-                group relative rounded-2xl
-                bg-white
-                p-6 sm:p-7
-                text-center
+                group relative rounded-2xl bg-white
+                p-6 sm:p-7 text-center
                 shadow-[0_10px_30px_rgba(0,0,0,0.08)]
                 hover:shadow-[0_20px_40px_rgba(0,0,0,0.12)]
                 transition
@@ -95,9 +95,15 @@ export default function TrustStats() {
                                 <span className="text-2xl">{stat.icon}</span>
                             </div>
 
-                            {/* Value */}
+                            {/* Count Number */}
                             <h3 className="text-2xl font-extrabold text-[#03373D] sm:text-3xl">
-                                {stat.value}
+                                <CountUp
+                                    end={stat.value}
+                                    duration={2.2}
+                                    decimals={stat.decimals || 0}
+                                    separator=","
+                                    suffix={stat.suffix}
+                                />
                             </h3>
 
                             {/* Title */}
@@ -105,7 +111,7 @@ export default function TrustStats() {
                                 {stat.title}
                             </p>
 
-                            {/* Hover Accent Line */}
+                            {/* Accent */}
                             <span
                                 className="absolute inset-x-6 bottom-0 h-1 scale-x-0 rounded-full transition-transform duration-300 group-hover:scale-x-100"
                                 style={{ backgroundColor: stat.color }}
