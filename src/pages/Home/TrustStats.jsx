@@ -40,7 +40,7 @@ const stats = [
 
 export default function TrustStats() {
     return (
-        <section className="relative overflow-hidden   py-16 sm:py-20">
+        <section className="relative overflow-hidden py-10  lg:py-16 sm:py-20">
             {/* 🌙 Top Semi-Moon Orange Glow */}
             <div
                 className="
@@ -60,7 +60,7 @@ export default function TrustStats() {
 
             <div className="relative z-10 mx-auto max-w-7xl">
                 {/* Header */}
-                <div className="mx-auto mb-14 max-w-2xl text-center">
+                <div className="mx-auto mb-8 lg:mb-14 max-w-2xl text-center">
                     <h2 className="text-3xl font-extrabold text-[#0D5EA6] sm:text-4xl">
                         Trusted by Thousands
                     </h2>
@@ -81,7 +81,7 @@ export default function TrustStats() {
                 p-6 sm:p-7 text-center
                 shadow-[0_10px_30px_rgba(0,0,0,0.08)]
                 hover:shadow-[0_20px_40px_rgba(0,0,0,0.12)]
-                transition
+                transition border-l-2 border-r-2 border-[#F04C2B]
               "
                         >
                             {/* Icon */}
