@@ -249,7 +249,7 @@ const DashboardLayout = () => {
             <div className="drawer-side">
                 <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
 
-                <ul className="menu bg-[#03373D] text-white min-h-full w-72 p-4">
+                <ul className="menu bg-[#03373D] text-white min-h-full pr-8 p-4">
 
                     {/* 🔹 Logo */}
                     <Link to="/" onClick={closeDrawer}>
