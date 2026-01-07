@@ -14,11 +14,14 @@ const Loader = () => { // কম্পোনেন্টের নাম "Loader
     const logoSizeClasses = "w-24 h-24 md:w-32 md:h-32";
 
     return (
-        // ব্যাকগ্রাউন্ডে পুরো স্ক্রিন জুড়ে গাঢ় নীল রঙ
         <div
-            className="flex items-center justify-center h-screen w-screen bg-center bg-cover bg-no-repeat relative"
-            style={{ backgroundColor: PRIMARY_BG_COLOR }}
-        >
+            className="flex items-center justify-center h-screen w-screen bg-center bg-cover bg-no-repeat relative">
+            {/* 🔶 Left Orange Glow */}
+            <div className="pointer-events-none absolute top-0 left-0 h-full w-40 bg-gradient-to-r from-[#F04C2B]/25 to-transparent blur-2xl" />
+
+            {/* 🔶 Right Orange Glow */}
+            <div className="pointer-events-none absolute top-0 right-0 h-full w-40 bg-gradient-to-l from-[#F04C2B]/25 to-transparent blur-2xl" />
+
 
             {/* লোডার কন্টেইনার (স্পিনার ও লোগো) */}
             <div className={`relative flex items-center justify-center ${loaderSizeClasses}`}>
@@ -60,7 +63,7 @@ const Loader = () => { // কম্পোনেন্টের নাম "Loader
 
             {/* Loading Text (ঐচ্ছিক: লোডারের নিচে টেক্সট) */}
             <div className="absolute mt-16  translate-y-1/2">
-                <p className="text-xl md:text-2xl font-semibold mt-10 text-white">
+                <p className="text-xs md:text-2xl font-semibold mt-8 lg:mt-15 text-[#03373D]">
                     Jhotpot is preparing your delivery route...
                 </p>
             </div>
