@@ -1,5 +1,6 @@
 // components/Loading.jsx
-import { FaTruckLoading } from "react-icons/fa";
+// import { MdDeliveryDining } from "react-icons/fa";
+import { MdDeliveryDining } from "react-icons/md";
 
 const Loading = () => {
     return (
@@ -7,7 +8,7 @@ const Loading = () => {
 
             {/* Animated truck icon */}
             <div className="text-6xl mb-4 animate-truck">
-                <FaTruckLoading style={{ color: "#F04C2B" }} aria-label="Loading icon" />
+                <MdDeliveryDining style={{ color: "#F04C2B" }} aria-label="Loading icon" />
             </div>
 
 
