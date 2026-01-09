@@ -197,7 +197,7 @@ const MyEarnings = () => {
 
     if (isLoading)
         return (
-            <div className="flex justify-center items-center min-h-[50vh] bg-gray-50">
+            <div className="flex justify-center items-center min-h-[50vh] ">
                 <FaSpinner className="text-4xl animate-spin" style={{ color: ACCENT_COLOR }} />
                 <p className="text-lg text-gray-600 ml-3">Loading earnings data...</p>
             </div>
@@ -208,7 +208,7 @@ const MyEarnings = () => {
 
             {/* Header */}
             <header className="mb-8 p-6 bg-white rounded-xl shadow-lg border-l-8" style={{ borderColor: ACCENT_COLOR }}>
-                <h1 className="text-3xl md:text-4xl font-extrabold flex items-center" style={{ color: TEXT_SHADE }}>
+                <h1 className="text-xl md:text-4xl font-extrabold flex items-center" style={{ color: TEXT_SHADE }}>
                     <FaWallet className="mr-3 text-4xl" style={{ color: ACCENT_COLOR }} />
                     My Earnings Overview
                 </h1>

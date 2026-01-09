@@ -234,7 +234,7 @@ const PendingDeliveries = () => {
 
             {/* Header */}
             <header className="mb-8 p-6 bg-white rounded-xl shadow-lg border-l-8" style={{ borderColor: ACCENT_COLOR }}>
-                <h1 className="text-3xl md:text-4xl font-extrabold flex items-center" style={{ color: TEXT_SHADE }}>
+                <h1 className="text-2xl md:text-4xl font-extrabold flex items-center" style={{ color: TEXT_SHADE }}>
                     <FaTasks className="mr-3 text-4xl" style={{ color: ACCENT_COLOR }} />
                     Pending Deliveries
                 </h1>
