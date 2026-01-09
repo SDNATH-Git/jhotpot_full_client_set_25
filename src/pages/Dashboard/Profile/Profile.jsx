@@ -241,6 +241,7 @@ import useAxiosSecure from "../../../hooks/useAxiosSecure";
 import axios from "axios";
 import { FaEdit, FaUserCircle, FaCamera, FaSave, FaTimes } from 'react-icons/fa';
 import Swal from "sweetalert2";
+import Loading from "../../../components/Loading";
 
 // --- কাস্টম কালার কনস্ট্যান্টস ---
 const PRIMARY_COLOR = '#0D5EA6'; // Primary Button, Blue accent
@@ -374,9 +375,10 @@ const Profile = () => {
     // --- রেন্ডারিং স্টেটস ---
 
     if (!user) return (
-        <div className="flex justify-center items-center min-h-[50vh] bg-gray-50">
-            <span className="loading loading-spinner loading-lg" style={{ color: PRIMARY_COLOR }}></span>
-        </div>
+        // <div className="flex justify-center items-center min-h-[50vh] bg-gray-50">
+        //     <span className="loading loading-spinner loading-lg" style={{ color: PRIMARY_COLOR }}></span>
+        // </div>
+        <Loading></Loading>
     );
 
     // --- মেইন প্রোফাইল ভিউ ---

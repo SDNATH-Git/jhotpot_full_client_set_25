@@ -137,7 +137,7 @@ const PaymentHistory = () => {
     return (
         <div className="p-4 md:p-8 bg-gray-50 min-h-screen">
             <header className="mb-8 p-6 bg-white rounded-xl shadow-lg border-b-4" style={{ borderBottomColor: PRIMARY_COLOR }}>
-                <h1 className="text-3xl md:text-4xl font-extrabold flex items-center" style={{ color: ACCENT_COLOR }}>
+                <h1 className="text-2xl md:text-4xl font-extrabold flex items-center" style={{ color: ACCENT_COLOR }}>
                     <FaHistory className="mr-3" style={{ color: PRIMARY_COLOR }} />
                     Payment History
                 </h1>
