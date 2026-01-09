@@ -80,10 +80,11 @@ const Dashboard = () => {
 
     if (loading)
         return (
-            <div className="flex justify-center items-center min-h-[50vh]">
-                <span className="loading loading-spinner loading-lg" style={{ color: PRIMARY_COLOR }}></span>
-                <p className="text-gray-600 ml-3">Loading.... </p>
-            </div>
+            // <div className="flex justify-center items-center min-h-[50vh]">
+            //     <span className="loading loading-spinner loading-lg" style={{ color: PRIMARY_COLOR }}></span>
+            //     <p className="text-gray-600 ml-3">Loading.... </p>
+            // </div>
+            <Loading></Loading>
         );
 
     const userRole = user?.role || 'user';
