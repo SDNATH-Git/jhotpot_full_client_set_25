@@ -75,6 +75,7 @@ import useAuth from '../../../hooks/useAuth';
 import { useQuery } from '@tanstack/react-query';
 import useAxiosSecure from '../../../hooks/useAxiosSecure';
 import { FaHistory, FaSearch, FaCreditCard, FaDollarSign } from 'react-icons/fa';
+import Loading from '../../../components/Loading';
 
 // --- কাস্টম কালার কনস্ট্যান্টস ---
 const PRIMARY_COLOR = '#F04C2B';
@@ -117,9 +118,10 @@ const PaymentHistory = () => {
 
     if (loading || isPending) {
         return (
-            <div className="flex justify-center items-center min-h-[50vh] bg-gray-50">
-                <span className="loading loading-spinner loading-lg" style={{ color: PRIMARY_COLOR }}></span>
-            </div>
+            // <div className="flex justify-center items-center min-h-[50vh] bg-gray-50">
+            //     <span className="loading loading-spinner loading-lg" style={{ color: PRIMARY_COLOR }}></span>
+            // </div>
+            <Loading></Loading>
         );
     }
 
