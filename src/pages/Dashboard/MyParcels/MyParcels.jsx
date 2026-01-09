@@ -252,9 +252,16 @@ const MyParcels = () => {
 
     return (
         <div className="p-4">
-            <h1 className="text-3xl font-bold mb-6" style={{ color: ACCENT_COLOR }}>
+            <header className="mb-8 p-6 bg-white rounded-xl shadow-lg border-b-4" style={{ borderBottomColor: PRIMARY_COLOR }}>
+                <h1 className="text-2xl md:text-4xl font-extrabold flex items-center" style={{ color: ACCENT_COLOR }}>
+                    📦 My Parcel Bookings ({parcels.length})
+                </h1>
+                <p className="text-gray-600 mt-1">Review all your successful parcel payment transactions.</p>
+            </header>
+
+            {/* <h1 className="text-3xl font-bold mb-6" style={{ color: ACCENT_COLOR }}>
                 📦 My Parcel Bookings ({parcels.length})
-            </h1>
+            </h1> */}
 
             <div className="overflow-x-auto rounded-xl shadow-2xl border border-gray-100">
                 <table className="table w-full">

@@ -1,5 +1,6 @@
 // components/Loading.jsx
 // import { MdDeliveryDining } from "react-icons/fa";
+import { FaSpinner } from "react-icons/fa";
 import { MdDeliveryDining } from "react-icons/md";
 
 const Loading = () => {
@@ -23,7 +24,11 @@ const Loading = () => {
             </p>
 
             {/* DaisyUI spinner for extra visual feedback */}
-            <span className="loading loading-spinner loading-lg text-[#F04C2B] mt-6"></span>
+            {/* <span className="loading loading-spinner loading-lg text-[#F04C2B] mt-6"></span> */}
+            <div className="flex justify-center items-center  mt-6">
+                <FaSpinner className="text-4xl animate-spin text-[#0D5EA6]" />
+                <p className="text-lg text-gray-600 ml-3">Loading...</p>
+            </div>
         </div>
     );
 };

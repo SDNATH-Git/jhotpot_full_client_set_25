@@ -197,6 +197,7 @@ import { useState } from "react";
 import Swal from "sweetalert2";
 import useTrackingLogger from "../../../hooks/useTrackingLogger";
 import useAuth from "../../../hooks/useAuth";
+import Loading from "../../../components/Loading";
 
 // --- কাস্টম কালার কনস্ট্যান্টস ---
 const PRIMARY_COLOR = '#0D5EA6'; // Primary Button, Blue accent
@@ -303,9 +304,10 @@ const AssignRider = () => {
 
     if (isLoading) {
         return (
-            <div className="flex justify-center items-center min-h-[50vh] bg-gray-50">
-                <span className="loading loading-spinner loading-lg" style={{ color: PRIMARY_COLOR }}></span>
-            </div>
+            // <div className="flex justify-center items-center min-h-[50vh] bg-gray-50">
+            //     <span className="loading loading-spinner loading-lg" style={{ color: PRIMARY_COLOR }}></span>
+            // </div>
+            <Loading></Loading>
         );
     }
 
@@ -314,7 +316,7 @@ const AssignRider = () => {
 
             {/* Header */}
             <header className="mb-8 p-6 bg-white rounded-xl shadow-lg border-b-4" style={{ borderBottomColor: ACCENT_COLOR }}>
-                <h1 className="text-3xl md:text-4xl font-extrabold flex items-center" style={{ color: TEXT_SHADE }}>
+                <h1 className="text-xl md:text-4xl font-extrabold flex items-center" style={{ color: TEXT_SHADE }}>
                     <FaMotorcycle className="mr-3 text-4xl" style={{ color: PRIMARY_COLOR }} />
                     Assign Parcel Delivery Riders
                 </h1>

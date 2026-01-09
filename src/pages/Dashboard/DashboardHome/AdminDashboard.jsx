@@ -287,7 +287,7 @@ const useDeliveryTrends = () => {
 // --- চার্ট কম্পোনেন্ট ---
 
 const DeliveryTrends = ({ trendsData, isLoading, isError }) => {
-    if (isLoading) return <div className="text-center py-10 text-gray-500"> <Loading></Loading> </div>;
+    if (isLoading) return <Loading></Loading>;
 
     // ত্রুটি বা ডেটা না থাকলে
     if (isError || !trendsData || trendsData.length === 0) return (
@@ -355,9 +355,7 @@ export default function AdminDashboard() {
 
     if (isLoading)
         return (
-            <div className="flex justify-center items-center min-h-[70vh] bg-gray-50">
-                <span className="loading loading-spinner loading-lg text-primary"></span>
-            </div>
+            <Loading></Loading>
         );
 
     // ত্রুটি ব্যবস্থাপনা (যদিও ডেমো ডেটার জন্য এটি ট্রিগার হবে না)

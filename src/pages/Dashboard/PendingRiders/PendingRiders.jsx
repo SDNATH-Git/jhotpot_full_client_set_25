@@ -142,6 +142,7 @@ import Swal from "sweetalert2";
 import { FaEye, FaCheck, FaTimes, FaUserClock, FaMotorcycle } from "react-icons/fa";
 import useAxiosSecure from "../../../hooks/useAxiosSecure";
 import { useQuery } from "@tanstack/react-query";
+import Loading from "../../../components/Loading";
 
 // --- কাস্টম কালার কনস্ট্যান্টস ---
 const PRIMARY_COLOR = '#0D5EA6'; // Blue accent (Approve button, main accents)
@@ -213,9 +214,10 @@ const PendingRiders = () => {
 
     if (isPending) {
         return (
-            <div className="flex justify-center items-center min-h-[50vh] bg-gray-50">
-                <span className="loading loading-spinner loading-lg" style={{ color: PRIMARY_COLOR }}></span>
-            </div>
+            // <div className="flex justify-center items-center min-h-[50vh] bg-gray-50">
+            //     <span className="loading loading-spinner loading-lg" style={{ color: PRIMARY_COLOR }}></span>
+            // </div>
+            <Loading></Loading>
         );
     }
 
@@ -224,8 +226,8 @@ const PendingRiders = () => {
 
             {/* Header */}
             <header className="mb-8 p-6 bg-white rounded-xl shadow-lg border-b-4" style={{ borderBottomColor: ACCENT_COLOR }}>
-                <h1 className="text-3xl md:text-4xl font-extrabold flex items-center" style={{ color: TEXT_SHADE }}>
-                    <FaUserClock className="mr-3 text-4xl" style={{ color: ACCENT_COLOR }} />
+                <h1 className="text-xl md:text-4xl font-extrabold flex items-center" style={{ color: TEXT_SHADE }}>
+                    <FaUserClock className="mr-1 text-4xl" style={{ color: ACCENT_COLOR }} />
                     Pending Rider Applications
                 </h1>
                 <p className="text-gray-600 mt-1">Review and manage all new rider applications awaiting approval.</p>

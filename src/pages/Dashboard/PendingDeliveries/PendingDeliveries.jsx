@@ -144,6 +144,7 @@ import Swal from 'sweetalert2';
 import useTrackingLogger from '../../../hooks/useTrackingLogger';
 import { FaMotorcycle, FaTasks, FaSpinner, FaMapMarkerAlt, FaTruckLoading } from 'react-icons/fa';
 import { BsCheckCircleFill } from 'react-icons/bs';
+import Loading from '../../../components/Loading';
 
 // --- কাস্টম কালার কনস্ট্যান্টস ---
 const PRIMARY_COLOR = '#0D5EA6'; // Blue accent (Picked Up button, main accents)
@@ -222,7 +223,7 @@ const PendingDeliveries = () => {
 
     if (isLoading)
         return (
-            <div className="flex justify-center items-center min-h-[50vh] bg-gray-50">
+            <div className="flex justify-center items-center min-h-[50vh]">
                 <FaSpinner className="text-4xl animate-spin" style={{ color: PRIMARY_COLOR }} />
                 <p className="text-lg text-gray-600 ml-3">Loading assigned deliveries...</p>
             </div>
