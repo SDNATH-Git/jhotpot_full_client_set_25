@@ -23,7 +23,7 @@ const Loading = () => {
             </p>
 
             {/* DaisyUI spinner for extra visual feedback */}
-            <span className="loading loading-spinner loading-lg text-primary mt-6"></span>
+            <span className="loading loading-spinner loading-lg text-[#F04C2B] mt-6"></span>
         </div>
     );
 };

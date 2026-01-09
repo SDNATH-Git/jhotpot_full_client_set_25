@@ -150,6 +150,7 @@ import useAxiosSecure from '../../../hooks/useAxiosSecure';
 import Swal from 'sweetalert2';
 import { useNavigate } from 'react-router';
 import { FaEye, FaCreditCard, FaEdit, FaTimesCircle, FaBoxOpen } from 'react-icons/fa';
+import Loading from '../../../components/Loading';
 
 // --- কাস্টম কালার ক্লাস ---
 const PRIMARY_COLOR = '#F04C2B';
@@ -241,7 +242,8 @@ const MyParcels = () => {
     // --- রেন্ডারিং স্টেটস ---
 
     if (loading || isLoading) {
-        return <div className="flex justify-center items-center min-h-[50vh]"><span className="loading loading-spinner loading-lg" style={{ color: PRIMARY_COLOR }}></span></div>;
+        // return <div className="flex justify-center items-center min-h-[50vh]"><span className="loading loading-spinner loading-lg" style={{ color: PRIMARY_COLOR }}></span></div>;
+        return <Loading></Loading>;
     }
 
     if (isError) {
